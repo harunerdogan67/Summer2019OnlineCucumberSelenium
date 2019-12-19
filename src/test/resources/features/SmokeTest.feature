@@ -9,6 +9,6 @@ Feature: Smoke test
 
   Scenario: Verify Manage Dashboard page
     Given user is on the login page
-    When user logs in as store manager
+    Then user logs in as store manager
     And user navigates to "Dashboards" and "Manage Dashboards"
     Then user verifies that "All Manage Dashboards" page subtitle is displayed
