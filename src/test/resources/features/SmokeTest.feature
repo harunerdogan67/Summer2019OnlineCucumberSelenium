@@ -20,6 +20,6 @@ Feature: Smoke test
     And user navigates to "Customers" then to "Accounts"
     Then user verifies that "All Accounts" page subtitle is displayed
 
-  Scenario: Verify Contacts page
-    And user navigates to "Customers" then to "Contacts"
-    Then user verifies that "All Contacts" page subtitle is displayed
+#  Scenario: Verify Contacts page
+#    And user navigates to "Customers" then to "Contacts"
+#    Then user verifies that "All Contacts" page subtitle is displayed
