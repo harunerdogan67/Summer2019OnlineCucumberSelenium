@@ -7,7 +7,6 @@ import com.vytrack.utilities.Driver;
 import io.cucumber.java.en.*;
 import org.junit.Assert;
 
-import javax.sql.rowset.BaseRowSet;
 import java.util.Map;
 
 public class LoginStepDefinitions {
@@ -53,13 +52,13 @@ public class LoginStepDefinitions {
     //Then user enters "storemanager85" username and "wrong" password
     @Then("user enters {string} username and {string} password")
     public void user_enters_username_and_password(String string, String string2) {
-        System.out.println("Login with "+string+" username and "+string2+" password.");
+        System.out.println("Login with " + string + " username and " + string2 + " password.");
         loginPage.login(string, string2);
     }
 
     @Then("user verifies that {string} message is displayed")
     public void user_verifies_that_message_is_displayed(String string) {
-        System.out.println("Verified that warning message is displayed: "+string);
+        System.out.println("Verified that warning message is displayed: " + string);
     }
 //    Then user logs in as driver with following credentials
 //            | username | user160     |

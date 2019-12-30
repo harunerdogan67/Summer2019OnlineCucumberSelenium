@@ -13,7 +13,7 @@ public class Hook {
     public void setup(){
         System.out.println("##############################");
         System.out.println("Test setup!");
-        //Driver.get().manage().window().maximize();
+        Driver.get().manage().window().maximize();
     }
 
     @After
@@ -23,7 +23,6 @@ public class Hook {
             System.out.println("Test failed!");
             byte[] screenshot = ((TakesScreenshot)Driver.get()).getScreenshotAs(OutputType.BYTES);
             scenario.embed(screenshot, "image/png");
-
         }else{
             System.out.println("Cleanup!");
             System.out.println("Test completed!");
